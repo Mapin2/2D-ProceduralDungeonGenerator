@@ -163,9 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0396b4671cf13854fb178f52b4082b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minZ: -150
+  _minZ: -800
   _maxZ: -8.5
-  _panVelocity: 10
+  _panVelocity: 50
   _zoomVelocity: 1000
   _screenEdgeBorder: 150
 --- !u!20 &519420031
@@ -372,12 +372,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7582365718656085043, guid: 1dbd9be07ec709e4a92540d25ce7bdce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582365719125288390, guid: 1dbd9be07ec709e4a92540d25ce7bdce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7582365719279215296, guid: 1dbd9be07ec709e4a92540d25ce7bdce, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1657588960}
     - target: {fileID: 7582365719749499696, guid: 1dbd9be07ec709e4a92540d25ce7bdce, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582365719749499700, guid: 1dbd9be07ec709e4a92540d25ce7bdce, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
