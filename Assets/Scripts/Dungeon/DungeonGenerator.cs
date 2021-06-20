@@ -8,7 +8,7 @@ namespace DG.Dungeon
     public class DungeonGenerator : MonoBehaviour
     {
         [SerializeField] private GameObject _roomPrefab;
-        [SerializeField] private short _desiredNumberOfRooms;
+        [SerializeField] private ushort _desiredNumberOfRooms;
         [SerializeField] private Transform _dungeonParent;
 
         private Transform _transform;
@@ -20,6 +20,15 @@ namespace DG.Dungeon
         private Stack<Room> _dungeonRooms;
 
         private bool _canSpawn = true;
+
+        public string DesiredNumberOfRooms {
+            set
+            {
+                if (string.IsNullOrEmpty(value)) return;
+                var parsedValue = ushort.Parse(value);
+                _desiredNumberOfRooms = (ushort) Mathf.Clamp(parsedValue, 0, 65535);
+            }
+        }
 
         private void Awake()
         {
@@ -38,7 +47,7 @@ namespace DG.Dungeon
                 GenerateDungeon();
         }
 
-        private void GenerateDungeon()
+        public void GenerateDungeon()
         {
             ClearDungeon();
 
