@@ -6,6 +6,7 @@ Small demo for practice purposes, it is based on the first Binding Of Isaac game
 
 ## Controls
 I'v added a simple RTS like camera controller if you try the demo.
+Also implemented a main menu from the Escape key to input the number of rooms the dungeon will have.
 
 Movement:
 * WASD or screen edges with mouse for moving the camera.
