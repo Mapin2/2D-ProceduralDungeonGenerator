@@ -26,7 +26,7 @@ namespace DG.Dungeon
             {
                 if (string.IsNullOrEmpty(value)) return;
                 var parsedValue = ushort.Parse(value);
-                _desiredNumberOfRooms = (ushort) Mathf.Clamp(parsedValue, 0, 65535);
+                _desiredNumberOfRooms = (ushort) Mathf.Clamp(parsedValue, 2, 1000);
             }
         }
 
