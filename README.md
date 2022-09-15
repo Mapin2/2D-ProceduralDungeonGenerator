@@ -5,7 +5,7 @@ Small demo for practice purposes, it is based on the first Binding Of Isaac game
 * The procedural algorithm is the simplest drunkard's walk possible.
 
 ## Controls
-I'v added a simple RTS like camera controller if you try the demo.
+I've added a simple RTS like camera controller if you try the demo.
 
 Also implemented a main menu from the Escape key to input the number of rooms the dungeon will have.
 
